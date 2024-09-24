@@ -653,11 +653,10 @@ ul li {
 .mapa-de-reservas{
     background-color: rgb(69, 69, 69);
     position: absolute;
-    top: 23%;
-    bottom: 1%;
+    top: 20%;
+    bottom: -45%;
     left: 2%;
     right: 1%;
-    height: 90%;
 }
 button:hover{
     transform: scale(1.1);
@@ -751,7 +750,7 @@ button:hover{
     border-right: 5px rgb(151, 151, 0) solid;
     height: 80px;
     width: 60px;
-    top: 150px;
+    top: 200px;
 }
 .b1{
     left: 5px;
@@ -819,167 +818,14 @@ button:hover{
 .discapacidad-b22{
     left: 1368px;
 }
-#seccion-c{
-    color: white;
-    position: absolute;
-    background-color: black;
-    border-top: 5px rgb(151, 151, 0) solid;
-    border-left: 5px rgb(151, 151, 0) solid;
-    border-right: 5px rgb(151, 151, 0) solid;
-    height: 80px;
-    width: 60px;
-    top:235px
-}
-.c1{
-    left: 5px;
-}
-.c2{
-    left: 70px;
-}
-.c3{
-    left: 135px;   
-}
-.c4{
-    left: 200px;
-}
-.c5{
-    left: 265px;
-}
-.c6{
-    left: 330px;
-}
-.c7{
-    left: 395px;
-}
-.c8{
-    left: 460px;
-}
-.c9{
-    left: 525px;
-}
-.c10{
-    left: 590px;
-}
-.c11{
-    left: 655px;
-}
-.c12{
-    left: 720px;
-}
-.c13{
-    left: 785px;
-}
-.c14{
-    left: 850px;
-}
-.c15{
-    left: 915px;
-}
-.c16{
-    left: 980px;
-}
-.c17{
-    left: 1045px;
-}
-.c18{
-    left: 1110px;
-}
-.c19{
-    left: 1175px;
-}
-.c20{
-    left: 1240px;
-}
-.discapacidad-c21{
-    left: 1303px;
-}
-.discapacidad-c22{
-    left: 1368px;
-}
-#seccion-d{
-    color: white;
-    position: absolute;
-    background-color: black;
-    border-bottom: 5px rgb(151, 151, 0) solid;
-    border-left: 5px rgb(151, 151, 0) solid;
-    border-right: 5px rgb(151, 151, 0) solid;
-    height: 80px;
-    width: 60px;
-    top: 380px;   
-}
-.d1{
-    left: 5px;
-}
-.d2{
-    left: 70px;
-}
-.d3{
-    left: 135px;   
-}
-.d4{
-    left: 200px;
-}
-.d5{
-    left: 265px;
-}
-.d6{
-    left: 330px;
-}
-.d7{
-    left: 395px;
-}
-.d8{
-    left: 460px;
-}
-.d9{
-    left: 525px;
-}
-.d10{
-    left: 590px;
-}
-.d11{
-    left: 655px;
-}
-.d12{
-    left: 720px;
-}
-.d13{
-    left: 785px;
-}
-.d14{
-    left: 850px;
-}
-.d15{
-    left: 915px;
-}
-.d16{
-    left: 980px;
-}
-.d17{
-    left: 1045px;
-}
-.d18{
-    left: 1110px;
-}
-.d19{
-    left: 1175px;
-}
-.d20{
-    left: 1240px;
-}
-.discapacidad-d21{
-    left: 1303px;
-}
-.discapacidad-d22{
-    left: 1368px;
-}
+
 .tu-eleccion{
     background-color: green;
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 18%;
+    bottom: 58%;
     left: 15%;
 }
 .ocupado{
@@ -988,7 +834,7 @@ button:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 18%;
+    bottom: 58%;
     left: 30%;
 }
 .no-disponible{
@@ -997,7 +843,7 @@ button:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 18%;
+    bottom: 58%;
     left: 45%;
 }
 .libre{
@@ -1006,14 +852,14 @@ button:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 18%;
+    bottom: 58%;
     left: 60%;
 }
 .discapacidad{
     position: absolute;    
     bottom: 4%;
     left: 11%;
-    bottom: 18%;
+    bottom: 12%;
 }
 .discapacidad1{
     background-color: black;
@@ -1021,42 +867,47 @@ button:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    bottom: 18%;
+    bottom: 58%;
     left: 75%;
 }
 .tu-eleccion-text{
     position: absolute;
-    bottom: 18%;
+    bottom: 58%;
     left: 19%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;  
+    color: white;
 }
 .ocupado-text{
     position: absolute;
-    bottom: 18%;
+    bottom: 58%;
     left: 34%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;  
+    color: white;
 }.no-disponible-text{
     position: absolute;
-    bottom: 18%;
+    bottom: 58%;
     left: 49%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;  
+    color: white;
 }
 .libre-text{
     position: absolute;
-    bottom: 18%;
+    bottom: 58%;
     left: 64%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;  
+    color: white;
 }
 .discapacidad-text{
     position: absolute;
-    bottom: 18%;
+    bottom: 58%;
     left: 79%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 130%;  
+    color: white;
 }
 .Reservar{
     position: absolute;
@@ -1065,7 +916,7 @@ button:hover{
     border-radius: 10px;
     width: 100px;
     border: 2px #00336a solid;
-    bottom: 5%;
+    bottom: 45%;
     left: 26%;
 }
 .Reservar:hover{
@@ -1078,9 +929,55 @@ button:hover{
     border-radius: 10px;
     width: 100px;
     border: 2px #00336a solid;
-    bottom: 5%;
+    bottom: 45%;
     left: 66%;
 }
 .Rentar:hover{
     box-shadow: 0 0 10px blue;
+}
+.prom-desc {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 14%;
+    left: 30%;
+}
+.card-desc , .card-prom {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-desc:hover , .card-prom:hover {
+    transform: translateY(-10px);
+}
+
+.card-content-desc h2 , .card-content-prom h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0033ff;
+}
+
+.card-content-desc p , .card-content-prom p {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.obt-desc , .obt-prom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6584ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.obt-desc:hover , .obt-prom:hover {
+    background-color: #A7B8FC;
 }
