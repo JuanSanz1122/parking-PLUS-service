@@ -98,7 +98,7 @@
                   width="40px"></div>
   <h4 class="discapacidad-text">Lugar para discapacidatados</h4>
   <!-- fin mapa -->
-  <center><button class="Reservar">Reservar</button></center>
+  <center><button class="Reservar" id="reservar">Reservar</button></center>
   <center><button class="Rentar">Rentar</button></center>
 
 
@@ -121,6 +121,37 @@
       </div>
   </div>
 </div>
-</section>    
+</section>
+<div id="miModal" class="modal">
+    <div class="modal-contenido">
+        <img src="img/isotipo (nuevo).png" alt="isotipo" class="isotipo">
+        <div class="titulo-form">
+            <span class="close">x</span>
+            <h1 class="titulo-text">Ingresa los datos</h1>
+        </div>
+        <label for="fecha" class="fecha">Fecha de reserva</label>
+        <input type="date" id="fecha">
+        <label for="hora1" class="hora1">Hora de inicio</label>
+        <input type="time" id="hora1">
+        <label for="hora2" class="hora2">Hora final</label>
+        <input type="time" id="hora2">
+        <label for="placa" class="placa">Placa de vehiculo</label>
+        <input type="text" id="placa">
+        <label for="medio-de-pago" class="medio-de-pago">Medio de pago</label>
+        <select name="medio de pago" id="medio-de-pago">
+            <option value="no-seleccionado">no seleccionado</option>
+            <option value="tarjeta-credito">tarjeta de credito</option>
+            <option value="tarjeta-debito">tarjeta debito</option>
+            <option value="nequi">Nequi</option>
+            <option value="daviplata">Daviplata</option>
+            <option value="Pse">Pse</option>
+        </select>
+        <div class="fin-reserva">
+            <h1 class="total">Total: 0.00$</h1>
+            <button class="pagar">Pagar</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -69,13 +69,13 @@ body {
     border: 2px gray solid;
     transition-duration: 300ms;
 }
-input:hover{
+/*:hover{
     box-shadow: 0 0 0 4px #A7B8FC;
     position: absolute;
     left: 5%;
     right: 5%;
     transition-duration: 600ms;
-}
+}*/
 .info-texto {
     position: absolute;
     top: 8%;
@@ -980,4 +980,157 @@ button:hover{
 
 .obt-desc:hover , .obt-prom:hover {
     background-color: #A7B8FC;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-contenido {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    bottom: 10%;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #A7B8FC;
+}
+.titulo-form{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 85%;
+    background-color: black;
+}
+.titulo-text{
+    position: absolute;
+    right: 35%;
+    color: white;
+}
+.close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: #A7B8FC;
+}
+#medio-de-pago{ 
+    position: absolute;
+    bottom: 34%;
+    right: 10%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+}
+.medio-de-pago{
+    position: absolute;
+    bottom: 34%;
+    right: 28%;
+}
+#placa{
+    position: absolute;
+    bottom: 34%;
+    left: 25%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+    transition-duration: 400ms;
+}
+.placa{
+    position: absolute;
+    bottom: 34%;
+    left: 11%;
+}
+#fecha{
+    position: absolute;
+    bottom: 70%;
+    left: 51%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+    transition-duration: 400ms;
+}
+.fecha{
+    position: absolute;
+    bottom: 70%;
+    left: 35%;
+}
+#hora1{
+    position: absolute;
+    bottom: 52%;
+    left: 25%;
+    width: 20%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+    transition-duration: 400ms;
+}
+.hora1{
+    position: absolute;
+    bottom: 52%;
+    left: 11%;
+}
+#hora2{
+    position: absolute;
+    bottom: 52%;
+    right: 10%;
+    width: 16%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+    transition-duration: 400ms;
+}
+.hora2{
+    position: absolute;
+    bottom: 52%;
+    right: 29%;
+}
+.fin-reserva{
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: black;
+    
+}
+.total{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: white;
+}
+.pagar{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    padding: 5px 5px;
+    background-color: #A7B8FC;
+    border-radius: 10px;
+    width: 100px;
+    border: 2px #00336a solid;
+    cursor: pointer;
+}
+.pagar:hover{
+    box-shadow: 0 0 10px blue;
+}
+.isotipo{
+    position: absolute;
+    top: 30%;
+    margin-left: 28%;
+    width: 40%;
+    left: auto;
+}
+
+#medio-de-pago:hover , #placa:hover , #fecha:hover , #hora1:hover , #hora2:hover{
+    box-shadow: 0 0 0 2px #486dff;
+    transition-duration: 800ms;
 }
