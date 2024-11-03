@@ -440,7 +440,12 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.banner-text {
+
+.banner_text.oculto{
+    opacity: 0;
+}
+
+.banner_text {
 	color: #fff;
 	position: absolute;
 	top: 50%;
@@ -449,8 +454,13 @@ body {
 	text-align: left;
 	font-size: 10%;
 	font-family: "Roboto", sans-serif;
+    opacity: 1;
+    transition: opacity 800ms ease-out;
 }
-.banner-text button {
+
+
+
+.banner_text button {
 	background: #6584ff;
 	border: none;
 	outline: none;
@@ -460,6 +470,8 @@ body {
 	font-family: montserrat;
 	display: inline-block;
 }
+
+
 .banner-text button:hover {
     background:#A7B8FC;
     cursor: pointer;
@@ -473,14 +485,22 @@ body {
 	object-fit: cover;
 	z-index: -1; /* Para que el texto esté encima del video */
   }
+  .main_section.aparecer {
+    opacity: 1; 
+    visibility: visible;
+}
 
-.main-section {
+.main_section {
     display: flex;
     flex-direction: row;
-    align-items: stretch; /* Asegura que ambos elementos tengan la misma altura */
-	background-color: #A7B8FC;
-	padding: 40px;
+    align-items: stretch; 
+    background-color: #A7B8FC;
+    padding: 40px;
+    opacity: 0; 
+    transition: opacity 700ms ease; 
+    visibility: hidden; /* Oculta inicialmente */
 }
+
 
 .info-container {
     flex: 1;
@@ -981,6 +1001,10 @@ button:hover{
 .obt-desc:hover , .obt-prom:hover {
     background-color: #A7B8FC;
 }
+.modal.show .modal-contenido {
+    transform: scale(1); /* Escala normal */
+    opacity: 1; /* Visible */
+}
 .modal {
     display: none; 
     position: fixed; 
@@ -999,6 +1023,9 @@ button:hover{
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #A7B8FC;
+    transform: scale(0.7); /* Escala inicial para el efecto de zoom */
+    opacity: 0; /* Empieza invisible */
+    transition: transform 0.3s ease, opacity 700ms ease; 
 }
 .titulo-form{
     position: absolute;
@@ -1133,4 +1160,9 @@ button:hover{
 #medio-de-pago:hover , #placa:hover , #fecha:hover , #hora1:hover , #hora2:hover{
     box-shadow: 0 0 0 2px #486dff;
     transition-duration: 800ms;
+}
+input:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #5a7bff;
+    transition: 200ms;
 }
