@@ -123,34 +123,70 @@
 </div>
 </section>
 <div id="Modal" class="modal">
-    <div class="modal-contenido">
-        <img src="img/isotipo (nuevo).png" alt="isotipo" class="isotipo">
-        <div class="titulo-form">
-            <span class="close">x</span>
-            <h1 class="titulo-text">Ingresa los datos</h1>
-        </div>
-        <label for="fecha" class="fecha">Fecha de reserva</label>
-        <input type="date" id="fecha">
-        <label for="hora1" class="hora1">Hora de inicio</label>
-        <input type="time" id="hora1">
-        <label for="hora2" class="hora2">Hora final</label>
-        <input type="time" id="hora2">
-        <label for="placa" class="placa">Placa de vehiculo</label>
-        <input type="text" id="placa">
-        <label for="medio-de-pago" class="medio-de-pago">Medio de pago</label>
-        <select name="medio de pago" id="medio-de-pago">
-            <option value="no-seleccionado">no seleccionado</option>
-            <option value="tarjeta-credito">tarjeta de credito</option>
-            <option value="tarjeta-debito">tarjeta debito</option>
-            <option value="nequi">Nequi</option>
-            <option value="daviplata">Daviplata</option>
-            <option value="Pse">Pse</option>
-        </select>
-        <div class="fin-reserva">
-            <h1 class="total">Total: 0.00$</h1>
-            <button class="pagar">Pagar</button>
-        </div>
-    </div>
+  <div class="modal-contenido">
+      <img src="img/isotipo (nuevo).png" alt="isotipo" class="isotipo">
+      <div class="titulo-form">
+          <span class="close">x</span>
+          <h1 class="titulo-text">Ingresa los datos</h1>
+      </div>
+      <label for="fecha" class="fecha">Fecha de reserva</label>
+      <input type="date" id="fecha">
+      <label for="hora1" class="hora1">Hora de inicio</label>
+      <input type="time" id="hora1">
+      <label for="hora2" class="hora2">Hora final</label>
+      <input type="time" id="hora2">
+      <label for="placa" class="placa">Placa de vehiculo</label>
+      <input type="text" id="placa">
+      <label for="medio-de-pago" class="medio-de-pago">Medio de pago</label>
+      <select name="medio de pago" id="medio-de-pago">
+          <option value="no-seleccionado">no seleccionado</option>
+          <option value="tarjeta-credito">tarjeta de credito</option>
+          <option value="tarjeta-debito">tarjeta debito</option>
+          <option value="nequi">Nequi</option>
+          <option value="daviplata">Daviplata</option>
+          <option value="Pse">Pse</option>
+      </select>
+      <div class="fin-reserva">
+          <h1 class="total">Total: 0.00$</h1>
+          <button class="pagar">Pagar</button>
+      </div>
+  </div>
+</div>
+
+<div id="modal-renta" class="modal-renta">
+  <div class="modal-contenido-renta">
+      <img src="img/isotipo (nuevo).png" alt="isotipo" class="isotipo">
+      <div class="titulo-form-renta">
+          <span class="close-renta">x</span>
+          <h1 class="titulo-text-renta">Ingresa los datos</h1>
+      </div>
+      <label for="fecha-inicio-renta" class="fecha-inicio-renta">Fecha de inicio</label>
+      <input type="date" id="fecha-inicio-renta">
+      <label for="placa" class="placa-renta">Placa de vehiculo</label>
+      <input type="text" id="placa-renta">
+      <label for="tiempo-de-renta" class="tiempo-de-renta">Tiempo de renta</label>
+      <select name="tiempo de renta" id="tiempo-de-renta">
+          <option value="no-seleccionado">no seleccionado</option>
+          <option value="semanal">Semanal</option>
+          <option value="mensual">Mensual</option>
+          <option value="anual">Anual</option> 
+      </select>
+      <label for="medio-de-pago-renta" class="medio-de-pago-renta">Medio de pago</label>
+      <select name="medio de pago" id="medio-de-pago-renta">
+          <option value="no-seleccionado">no seleccionado</option>
+          <option value="tarjeta-credito">tarjeta de credito</option>
+          <option value="tarjeta-debito">tarjeta debito</option>
+          <option value="nequi">Nequi</option>
+          <option value="daviplata">Daviplata</option>
+          <option value="Pse">Pse</option>
+      </select>
+      <div class="fin-renta">
+          <h1 class="total-renta">Total: 0.00$</h1>
+          <button class="pagar-renta">Pagar</button>
+      </div>
+  </div>
+</div>
+
 </div>
 <script src="Reservas.js"></script>
 </body>

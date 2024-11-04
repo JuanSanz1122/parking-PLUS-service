@@ -25,7 +25,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
     padding: 20px;
     background-color: #000000;
     transition-duration: 700ms;
@@ -69,17 +69,11 @@ body {
     border: 2px gray solid;
     transition-duration: 300ms;
 }
-/*:hover{
-    box-shadow: 0 0 0 4px #A7B8FC;
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    transition-duration: 600ms;
-}*/
+    
 .info-texto {
     position: absolute;
     top: 8%;
-    left: 20%;
+    left: 30%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cedula{
@@ -552,6 +546,10 @@ ul li {
 .contact-section p {
     font-size: 18px;
     margin: 10px 0;
+}
+.reserva-index{
+    color: white;
+    text-decoration-line: none;
 }
 
 @media (max-width: 768px) {
@@ -1047,12 +1045,15 @@ button:hover{
     color: red;
     font-size: 28px;
     font-weight: bold;
+    transition-duration: 200ms;
 }
 
 .close:hover,
 .close:focus {
     cursor: pointer;
     color: #A7B8FC;
+    transform: scale(1.5);
+    transition-duration: 400ms;
 }
 #medio-de-pago{ 
     position: absolute;
@@ -1156,13 +1157,169 @@ button:hover{
     width: 40%;
     left: auto;
 }
-
-#medio-de-pago:hover , #placa:hover , #fecha:hover , #hora1:hover , #hora2:hover{
-    box-shadow: 0 0 0 2px #486dff;
-    transition-duration: 800ms;
+.modal-renta.show .modal-contenido-renta {
+    transform: scale(1); /* Escala normal */
+    opacity: 1;
 }
+
+.modal-renta {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-contenido-renta {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    bottom: 10%;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #A7B8FC;
+    transform: scale(0.7); /* Escala inicial para el efecto de zoom */
+    opacity: 0; /* Empieza invisible */
+    transition: transform 0.3s ease, opacity 700ms ease; 
+}
+
+.titulo-form-renta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 85%;
+    background-color: black;
+}
+
+.titulo-text-renta {
+    position: absolute;
+    right: 38%;
+    color: white;
+}
+
+.close-renta {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    transition-duration: 200ms;
+}
+
+.close-renta:hover,
+.close-renta:focus {
+    cursor: pointer;
+    color: #A7B8FC;
+    transform: scale(1.5);
+    transition-duration: 400m;
+}
+
+#medio-de-pago-renta {
+    position: absolute;
+    bottom: 34%;
+    right: 8%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+}
+
+.medio-de-pago-renta {
+    position: absolute;
+    bottom: 34%;
+    right: 25%;
+}
+
+#placa-renta {
+    position: absolute;
+    bottom: 34%;
+    left: 25%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+}
+
+.placa-renta {
+    position: absolute;
+    bottom: 34%;
+    left: 11%;
+}
+
+#fecha-inicio-renta {
+    position: absolute;
+    bottom: 70%;
+    left: 25%;
+    width: 170px;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+}
+
+.fecha-inicio-renta {
+    position: absolute;
+    bottom: 70%;
+    left: 11%;
+}
+
+.fin-renta {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+.total-renta {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    color: white;
+}
+
+.pagar-renta {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    padding: 5px 5px;
+    background-color: #A7B8FC;
+    border-radius: 10px;
+    width: 100px;
+    border: 2px #00336a solid;
+    cursor: pointer;
+}
+
+.pagar-renta:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+.isotipo {
+    position: absolute;
+    top: 30%;
+    margin-left: 28%;
+    width: 40%;
+    left: auto;
+}
+.tiempo-de-renta{
+    position: absolute;
+    bottom: 70%;
+    right: 25%;
+}
+#tiempo-de-renta{
+    position: absolute;
+    bottom: 70%;
+    right: 8%;
+    border-radius: 10px;
+    border: 2px #486dff solid;
+}
+
+
 input:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 10px #5a7bff;
-    transition: 200ms;
+    box-shadow: 0 0 0 2px #486dff;
+    transition-duration: 800ms;
+    transition: 600ms;
 }
