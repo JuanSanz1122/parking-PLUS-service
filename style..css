@@ -491,7 +491,7 @@ body {
     background-color: #A7B8FC;
     padding: 40px;
     opacity: 0; 
-    transition: opacity 700ms ease; 
+    transition: opacity 800ms ease; 
     visibility: hidden; /* Oculta inicialmente */
 }
 
