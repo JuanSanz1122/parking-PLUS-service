@@ -659,7 +659,18 @@ ul li {
     right: 5%;
     left: 5%;
 }
-
+input[type="date"], input[type="search"], input[type="time"] {
+    transition: none;
+    position: static;
+}
+.dropdown-menu {
+    display: none;
+    position: static;
+    z-index: 1;
+}
+.btn-group {
+    position: static;
+}
 
 /* fin estilos reservas */
 
